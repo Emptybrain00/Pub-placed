@@ -188,7 +188,8 @@
     "nodemon": "^2.0.22"
   },
   "scripts": {
-    "start": "node ./src/server.js",
+    "start-prod": "NODE_ENV=production node ./src/server.js" ,
+    "start-dev": "nodemon ./src/server.js",
     "lint": "eslint ./src"
   },
   "keywords": [],
